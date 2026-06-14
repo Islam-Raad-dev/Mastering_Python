@@ -1,6 +1,6 @@
 # Mastering Python - Elzero Web School
 
-Welcome to my repository for mastering **Python**. This phase shifts the focus entirely to Python, establishing it as the primary tool for backend architecture, scripting, and engineering robust software systems.
+Welcome to my repository for mastering **Python**.This is the 16th course in my programming journey. This phase shifts the focus entirely to Python, establishing it as the primary tool for backend architecture, scripting, and engineering robust software systems.
 
 ## 🌐 Overview
 This repository covers the complete "Mastering Python" track. Python is treated as the backbone for building scalable systems. The execution moves from basic data types and syntax directly into complex Object-Oriented Programming (OOP) and database integration using PostgreSQL and SQLite. 
@@ -25,7 +25,7 @@ The execution follows strict architectural discipline:
 * **02_Variables_and_Data_Types:** Dynamic typing, integers, floats, and booleans.
 * **03_Data_Structures_Lists_Dicts_Sets:** Complex nested data and collection methods.
 * **04_Control_Flow_and_Loops:** Conditional execution and iteration logic.
-* **05_Functions_and_Built_in_Modules:** Scope, recursion, and standard library integration.
+* **05_Functions_and_Built-in_Modules:** Scope, recursion, and standard library integration.
 * **06_File_Handling_and_Exceptions:** IO operations and error trapping.
 * **07_Object_Oriented_Programming_OOP:** Classes, inheritance, magic methods, and abstraction.
 * **08_Databases_with_SQLite:** DDL and DML execution through Python scripts.
