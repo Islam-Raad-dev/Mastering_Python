@@ -1,7 +1,7 @@
 # ---------------------
 # -- Strings Methods --
 # ---------------------
-
+                                                       
 # split() rsplit()
 
 a = "I Love Python and C++ and PostrgreSQL"
