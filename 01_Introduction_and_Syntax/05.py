@@ -7,7 +7,7 @@
 a = "    I Love Python    "
 print(a.strip())
 print(a.rstrip())
-print(a.lstrip())
+print(a.lstrip())                    
 
 a = "#####I Love Python####"
 print(a.strip("#"))
