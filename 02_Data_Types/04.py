@@ -1,5 +1,5 @@
 # Indexing ( Access Single Item )
-
+                     
 myString = "I Love Python"
 
 print(myString[0])  # Index 0 => I
