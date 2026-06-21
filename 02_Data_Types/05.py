@@ -1,7 +1,7 @@
 # ---------------------
 # -- Strings Methods --
 # ---------------------
-                                  
+                                        
 # strip() rstrip() lstrip()
 
 a = "    I Love Python    "
