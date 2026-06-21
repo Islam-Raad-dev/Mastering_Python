@@ -2,7 +2,7 @@
     # -- Strings Methods --
     # ---------------------
                                                                    
-# split() rsplit()
+    # split() rsplit()
 
 a = "I Love Python and C++ and PostrgreSQL"
 print(a.split())
