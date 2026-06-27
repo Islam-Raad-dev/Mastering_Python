@@ -17,7 +17,7 @@ The execution follows strict architectural discipline:
 * **Core Data Structures:** Advanced slicing, indexing, and manipulation of Python's native data models.
 * **Error Handling:** Building crash-resistant code using `try, except, else, finally`.
 * **Object-Oriented Design:** Transitioning to class-based architecture, controlling instance attributes, static methods, and polymorphism.
-* **Database Integration:** Writing SQL queries directly through Python using the `sqlite3` module.
+* **Database Integration:** Integration with PostgreSQL and SQLite
 * **Scientific Computing (Intro):** Utilizing `Numpy` for high-performance matrix and array calculations.
 
 ## 📂 Repository Structure
