@@ -18,7 +18,7 @@ print(d.rsplit("-", 3))
 
 # center()
 
-e = "Osama"
+e = "Islam"
 print(e.center(9))  # Spaces
 print(e.center(9, "#"))  # Hashes
 print(e.center(15, "@"))  # @
