@@ -1,7 +1,7 @@
 # ---------------------
 # -- Strings Methods --
 # ---------------------
-
+ 
 # index(SubString, Start, End)
 
 a = "I Love Python"
