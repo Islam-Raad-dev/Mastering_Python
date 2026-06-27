@@ -21,19 +21,17 @@ The execution follows strict architectural discipline:
 * **Scientific Computing (Intro):** Utilizing `Numpy` for high-performance matrix and array calculations.
 
 ## 📂 Repository Structure
-* **01_Introduction_and_Syntax:** Escape sequences, comments, and basic execution.
-* **02_Variables_and_Data_Types:** Dynamic typing, integers, floats, and booleans.
-* **03_Data_Structures_Lists_Dicts_Sets:** Complex nested data and collection methods.
-* **04_Control_Flow_and_Loops:** Conditional execution and iteration logic.
-* **05_Functions_and_Built-in_Modules:** Scope, recursion, and standard library integration.
-* **06_File_Handling_and_Exceptions:** IO operations and error trapping.
-* **07_Object_Oriented_Programming_OOP:** Classes, inheritance, magic methods, and abstraction.
-* **08_Databases_with_SQLite:** DDL and DML execution through Python scripts.
-* **09_Advanced_Modules_and_Numpy:** Array creation and mathematical operations.
+* **01_Basics:** 
+* **02_OOP:** Classes, inheritance, magic methods, and abstraction.
+* **03_Database:** DDL and DML execution through Python scripts.
+* **04_Mics:** 
+* **05_Flask:** 
+* **06_Fastapi:** 
+* **07_Numpy:** Array creation and mathematical operations.
 
 ## 🛠️ Technologies Used
 * **Language:** Python 3
-* **Databases:** SQLite
+* **Databases:** PostgreSQL & SQLite
 * **Libraries:** Numpy, Built-in modules
 * **Environment:** VS Code (Linux Mint)
 
