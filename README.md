@@ -34,7 +34,7 @@ The execution follows strict architectural discipline:
 * **Databases:** PostgreSQL & SQLite
 * **Libraries:** Numpy, Built-in modules
 * **Environment:** VS Code (Linux Mint)
-
+  
 ## 🎓 Certification Goal
 By completing this track, I verify my technical capacity to:
 * Write clean, idiomatic ("Pythonic") code.
