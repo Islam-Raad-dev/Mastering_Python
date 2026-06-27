@@ -18,11 +18,11 @@ print(b.find("P", 0, 5))  # -1
 
 # rjust(Width, Fill Char) ljust(Width, Fill Char)
 
-c = "Osama"
+c = "Islam"
 print(c.rjust(10))
 print(c.rjust(10, "#"))
 
-d = "Osama"
+d = "Islam"
 print(d.ljust(10))
 print(d.ljust(10, "#"))
 
@@ -58,9 +58,9 @@ six = "I Love Python"
 print(five.islower())
 print(six.islower())
 
-seven = "osama_elzero"
-eight = "OsamaElzero100"
-nine = "Osama--Elzero100"
+seven = "Islam_Raad"
+eight = "IslamRaad100"
+nine = "Islam--Raad100"
 
 print(seven.isidentifier())
 print(eight.isidentifier())
