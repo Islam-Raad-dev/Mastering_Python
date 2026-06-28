@@ -1,8 +1,8 @@
-    # ---------------------
-    # -- Strings Methods --
-    # ---------------------
-                                                                   
-    # split() rsplit()
+# ---------------------
+# -- Strings Methods 1 --
+# ---------------------
+   
+# split() rsplit()
 
 a = "I Love Python and C++ and PostrgreSQL"
 print(a.split())
