@@ -1,5 +1,5 @@
 # ---------------------
-# -- Strings Methods 2 --
+# -- Strings Methods 3 --
 # ---------------------
  
 # index(SubString, Start, End)
