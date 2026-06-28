@@ -1,5 +1,5 @@
 # ---------------------
-# -- Strings Methods --
+# -- Strings Methods 1 --
 # ---------------------
                                               
 # strip() rstrip() lstrip()
