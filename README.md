@@ -1,6 +1,6 @@
 # Mastering Python - Elzero Web School
 
-Welcome to my repository for mastering **Python**.This is the **16th course** in my programming journey. This phase shifts the focus entirely to Python, establishing it as the primary tool for backend architecture, scripting, and engineering robust software systems.
+Welcome to my repository for **Mastering Python**.This is the **16th course** in my programming journey. This phase shifts the focus entirely to Python, establishing it as the primary tool for backend architecture, scripting, and engineering robust software systems.
 
 ## 🌐 Overview
 This repository covers the complete "Mastering Python" track. Python is treated as the backbone for building scalable systems. The execution moves from basic data types and syntax directly into complex Object-Oriented Programming (OOP) and database integration using PostgreSQL and SQLite. 
