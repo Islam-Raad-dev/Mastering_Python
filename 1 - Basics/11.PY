@@ -3,7 +3,7 @@
 # -----------
 
 # Tuple With One Element
-
+                 
 myTuple1 = ("Islam",)
 myTuple2 = ("Islam",)
 
