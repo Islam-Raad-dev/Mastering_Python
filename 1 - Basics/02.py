@@ -1,4 +1,4 @@
-      # Escaping
+# Escaping
                               
 print("Hello Python\nNew Line")
 print("I love \"Python\"")
