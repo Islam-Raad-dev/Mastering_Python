@@ -1,6 +1,5 @@
 # -----------------------------
-# -- Set Methods --
-# ---------
+# ------- Set Methods -----------
 # [1] Set Items Are Enclosed in Curly Braces
 # [2] Set Items Are Not Ordered And Not Indexed
 # [3] Set Indexing and Slicing Cant Be Done
@@ -147,7 +146,38 @@ print("=" * 40)  # Separator
 # symmetric_difference_update()
 
 k = {1, 2, 3, 4, 5, "X"}
-l = {"Osama", "Zero", 1, 2, 4, "X"}
+L = {"Osama", "Zero", 1, 2, 4, "X"}
 print(k)
-k.symmetric_difference_update(l)  # k ^ l
+k.symmetric_difference_update(L)  # k ^ L
 print(k)
+
+# issuperset()
+
+a = {1, 2, 3, 4}
+b = {1, 2, 3}
+c = {1, 2, 3, 4, 5}
+
+print(a.issuperset(b))  # True
+print(a.issuperset(c))  # FaLse
+
+print("=" * 50)
+
+# issubset()
+
+d = {1, 2, 3, 4}
+e = {1, 2, 3}
+f = {1, 2, 3, 4, 5}
+
+print(d.issubset(e))  # False
+print(d.issubset(f))  # True
+
+print("=" * 50)
+
+# isdisjoint()
+
+g = {1, 2, 3, 4}
+h = {1, 2, 3}
+i = {10, 11, 12}
+
+print(g.isdisjoint(h))  # False
+print(g.isdisjoint(i))  # True
