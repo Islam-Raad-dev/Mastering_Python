@@ -1,5 +1,5 @@
 # -----------------------------
-# -- Tuple --
+# -- Tuple Methods --
 # -----------
 # [1] Tuple Items Are Enclosed in Parentheses
 # [2] You Can Remove The Parentheses If You Want
