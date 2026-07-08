@@ -55,6 +55,10 @@ allFramework = {"one": frameworkOne, "two": frameworkTwo, "three": frameworkThre
 
 print(allFramework)
 
+
+# Dictionary Methods
+
+
 # clear()
 
 user = {"name": "Osama"}
@@ -74,9 +78,6 @@ member.update({"country": "Egypt"})
 print(member)
 
 print("=" * 50)
-
-#-----------------------------------------------------------------------
-# Dictionary Methods
 
 
 # copy()
