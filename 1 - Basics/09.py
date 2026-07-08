@@ -54,3 +54,42 @@ frameworkThree = {"name": "Angular", "progress": "80%"}
 allFramework = {"one": frameworkOne, "two": frameworkTwo, "three": frameworkThree}
 
 print(allFramework)
+
+# clear()
+
+user = {"name": "Osama"}
+print(user)
+user.clear()
+print(user)
+
+print("=" * 50)
+
+# update()
+
+member = {"name": "Osama"}
+print(member)
+member["age"] = 36
+print(member)
+member.update({"country": "Egypt"})
+print(member)
+
+print("=" * 50)
+
+#-----------------------------------------------------------------------
+# Dictionary Methods
+
+
+# copy()
+
+main = {"name": "Osama"}
+
+b = main.copy()
+print(b)
+main.update({"skills": "Fighting"})
+print(main)
+print(b)
+
+# keys() + values()
+
+print(main.keys())
+print(main.values())
