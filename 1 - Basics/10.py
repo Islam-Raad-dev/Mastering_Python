@@ -1,7 +1,8 @@
 # -------------
-# -- Boolean --
+# -- Boolean Methods --
 # -------------
-# [1] In Programming You Need to Known Your If Your Code Output is True Or False
+# [1] In Programming You Need to Known Your If Your Code Output 
+# is True Or False
 # [2] Boolean Values Are The Two Constant Objects False + True.
 # ---------------------------------------------------------------
 
