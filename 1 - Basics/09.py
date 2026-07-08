@@ -1,5 +1,5 @@
 # ---------------------------
-# -- Dictionary --
+# -- Dictionary Methods --
 # ----------------
 # [1] Dict Items Are Enclosed in Curly Braces
 # [2] Dict Items Are Contains Key : Value
@@ -61,7 +61,7 @@ print(allFramework)
 
 # clear()
 
-user = {"name": "Osama"}
+user = {"name": "Islam"}
 print(user)
 user.clear()
 print(user)
@@ -70,11 +70,11 @@ print("=" * 50)
 
 # update()
 
-member = {"name": "Osama"}
+member = {"name": "Islam"}
 print(member)
-member["age"] = 36
+member["age"] = 20
 print(member)
-member.update({"country": "Egypt"})
+member.update({"country": "Iraq"})
 print(member)
 
 print("=" * 50)
@@ -82,7 +82,7 @@ print("=" * 50)
 
 # copy()
 
-main = {"name": "Osama"}
+main = {"name": "Islam"}
 
 b = main.copy()
 print(b)
@@ -94,3 +94,40 @@ print(b)
 
 print(main.keys())
 print(main.values())
+
+# setdefault()
+
+user = {"name": "Islam"}
+print(user)
+print(user.setdefault("age", 20))
+print(user)
+
+print("=" * 40)
+
+# popitem()
+
+member = {"name": "Islam", "skill": "PS4"}
+print(member)
+member.update({"age": 20})
+print(member.popitem())
+
+print("=" * 40)
+
+# items()
+
+view = {"name": "Islam", "skill": "XBox"}
+
+allItems = view.items()
+print(view)
+view["age"] = 20
+
+print(allItems)
+
+print("=" * 40)
+
+# fromkeys()
+
+a = ("MyKeyOne", "MyKeyTwo", "MyKeyThree")
+b = "X"
+
+print(dict.fromkeys(a, b))
