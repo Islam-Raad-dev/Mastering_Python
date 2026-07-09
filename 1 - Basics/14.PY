@@ -2,12 +2,12 @@
 # -- User Input --
 # ----------------
 
-fName = input("What's Is Your First Name?")
-mName = input("What's Is Your Middle Name?")
-lName = input("What's Is Your Last Name?")
+FirstName = input("What's Is Your First Name: ")
+MiddleName = input("What's Is Your Middle Name: ")
+LastName = input("What's Is Your Last Name: ")
 
-fName = fName.strip().capitalize()
-mName = mName.strip().capitalize()
-lName = lName.strip().capitalize()
+FirstName = FirstName.strip().capitalize()
+MiddleName = MiddleName.strip().capitalize()
+LastName = LastName.strip().capitalize()
 
-print(f"Hello {fName} {mName:.1s} {lName} Happy To See You.")
+print(f"Hello {FirstName} {MiddleName:.1s} {LastName} Happy To See You.")
