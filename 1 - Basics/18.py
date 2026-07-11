@@ -4,7 +4,7 @@
 
 uName = "Islam"
 isStudent = "Yes"
-uCountry = "Egypt"
+uCountry = "Iraq"
 cName = "Python Course"
 cPrice = 100
 
