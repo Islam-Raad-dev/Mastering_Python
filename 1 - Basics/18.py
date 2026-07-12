@@ -13,7 +13,7 @@ if uCountry == "Egypt" or uCountry == "KSA" or uCountry == "Qatar":
         print(f"Hi {uName} Because U R From {uCountry} And Student")
         print(f'The Course "{cName}" Price Is: ${cPrice - 90}')
 
-    else:
+    else:                                   
         print(f"Hi {uName} Because U R From {uCountry}")
         print(f'The Course "{cName}" Price Is: ${cPrice - 80}')
 
