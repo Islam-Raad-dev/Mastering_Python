@@ -87,7 +87,7 @@ if len(myFavouriteWebs) > 0:
 
 tries = 4
 
-mainPassword = "Osama@123"
+mainPassword = "Islam@123"
 
 inputPassword = input("Write Your Password: ")
 
