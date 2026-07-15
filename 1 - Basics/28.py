@@ -15,7 +15,7 @@ def say_hello(name, age):
     return f"Hello {name} your Age Is: {age}"
 
 
-hello = lambda name, age: f"Hello {name} your Age Is: {age}"
+hello = lambda name, age: f"Hello {name} your Age Is: {age}"  # noqa: E731
 
 print(say_hello("Ahmed", 36))
 print(hello("Ahmed", 36))
