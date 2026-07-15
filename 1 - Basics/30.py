@@ -2,7 +2,7 @@
 # -- File Handling => Read File --
 # --------------------------------
 
-myFile = open("D:\Python\Files\osama.txt", "r")
+myFile = open("Islam.txt", "r")
 
 print(myFile)  # File Data Object
 print(myFile.name)
