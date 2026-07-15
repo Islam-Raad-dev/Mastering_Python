@@ -6,17 +6,17 @@ mySkills = {"HTML": "80%", "CSS": "90%", "JS": "70%", "PHP": "80%"}
 
 print(mySkills.items())
 
-#######################
+print("#######################")
 
 for skill in mySkills:
     print(f"{skill} => {mySkills[skill]}")
 
-#######################
+print("#######################")
 
 for skill_key, skill_progress in mySkills.items():
     print(f"{skill_key} => {skill_progress}")
 
-#######################
+print("#######################")
 
 myUltimateSkills = {
     "HTML": {"Main": "80%", "Pugjs": "80%"},
