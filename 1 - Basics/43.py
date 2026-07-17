@@ -67,3 +67,22 @@ print(f"Date Now Is {dateNow}")
 
 print(f" I Lived For {dateNow - myBirthDay}")
 print(f" I Lived For {(dateNow - myBirthDay).days} Days.")
+
+# ----------------------------------
+# ----------------------------------
+# https://strftime.org/
+# ---------------------
+
+myBirthday = datetime.datetime(1982, 10, 25)
+
+print(myBirthday)
+print(myBirthday.strftime("%a"))
+print(myBirthday.strftime("%A"))
+print(myBirthday.strftime("%b"))
+print(myBirthday.strftime("%B"))
+
+print(myBirthday.strftime("%d %B %Y"))
+print(myBirthday.strftime("%d, %B, %Y"))
+print(myBirthday.strftime("%d/%B/%Y"))
+print(myBirthday.strftime("%d - %B - %Y"))
+print(myBirthday.strftime("%B - %Y"))
