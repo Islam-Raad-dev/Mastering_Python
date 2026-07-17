@@ -54,12 +54,12 @@ print(datetime.time.max)
 print("#" * 40)
 
 # Print Specific Date
-print(datetime.datetime(1982, 10, 25))
-print(datetime.datetime(1982, 10, 25, 10, 45, 55, 150364))
+print(datetime.datetime(2006, 2, 23))
+print(datetime.datetime(2006, 2, 23, 2, 45, 55, 150364))
 
 print("#" * 40)
 
-myBirthDay = datetime.datetime(1982, 10, 25)
+myBirthDay = datetime.datetime(2006, 2, 23)
 dateNow = datetime.datetime.now()
 
 print(f"My Birthday is {myBirthDay} And ", end="")
