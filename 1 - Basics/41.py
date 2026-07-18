@@ -7,7 +7,7 @@ import sys
 sys.path.append(r"D:\Games")
 print(sys.path)
 
-import ISLAM
+import ISLAM # type: ignore  # noqa: E402
 
 print(dir(ISLAM))
 
@@ -21,7 +21,7 @@ ISLAM.sayHowAreYou("Mohamed")
 
 # Alias
 
-import ISLAM as ee
+import ISLAM as ee  # type: ignore  # noqa: E402
 
 ee.sayHello("Ahmed")
 ee.sayHello("Islam")
@@ -31,10 +31,10 @@ ee.sayHowAreYou("Ahmed")
 ee.sayHowAreYou("Islam")
 ee.sayHowAreYou("Mohamed")
 
-from ISLAM import sayHello
+from ISLAM import sayHello  # type: ignore  # noqa: E402
 
 sayHello("Islam")
 
-from ISLAM import sayHello as ss
+from ISLAM import sayHello as ss  # type: ignore  # noqa: E402
 
 ss("Islam")
