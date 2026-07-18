@@ -7,23 +7,25 @@
 # [4] Theres One Line and Multiple Line Doc Strings
 # -------------------------------------------------
 
+import sys
+# def Islam_function(name):
+#     """
+#     Islam Function
+#       It Say Hello From Islam
+#     Parameter:
+#       name => Person Name That Use Function
+#     Return:
+#       Return Hello Message To The Person
+#     """
+#     print(f"Hello {name} From Islam")
 
-def Islam_function(name):
-    """
-    Islam Function
-      It Say Hello From Islam
-    Parameter:
-      name => Person Name That Use Function
-    Return:
-      Return Hello Message To The Person
-    """
-    print(f"Hello {name} From Islam")
 
+# Islam_function("Ahmed")
 
-Islam_function("Ahmed")
+# print(dir(Islam_function))
 
-print(dir(Islam_function))
+# print(Islam_function.__doc__)
 
-print(Islam_function.__doc__)
+# help(Islam_function)
 
-help(Islam_function)
+print(sys.path)
