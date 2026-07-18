@@ -9,6 +9,12 @@
 # [6] raise Keyword Used To Raise Your Own Exceptions
 # -----------------------------------------------------------------
 
+"""_summary_
+
+    Raises:
+        Exception: _description_
+        ValueError: _description_
+"""
 x = -10
 
 if x < 0:
