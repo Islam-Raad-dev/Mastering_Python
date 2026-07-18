@@ -23,7 +23,7 @@ print("Print Message After If Condition")
 
 y = "10"
 
-if type(y) != int:
+if type(y) != int:  # noqa: E721
     raise ValueError("Only Numbers Allowed")
 
 print("Print Message After If Condition")
