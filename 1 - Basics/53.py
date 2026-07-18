@@ -19,7 +19,7 @@ try:  # Try The Code and Test Errors
 
     print("Good, This Is Integer From Try")
 
-except:  # Handle The Errors If Its Found
+except:  # Handle The Errors If Its Found  # noqa: E722
     print("Bad, This is Not Integer")
 
 else:  # If Theres No Errors
@@ -43,5 +43,5 @@ except NameError:
 except ValueError:
     print("Value Error Elzero")
 
-except:
+except:  # noqa: E722
     print("Error Happens")
