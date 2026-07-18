@@ -21,7 +21,7 @@ else:
 
 print("Print Message After If Condition")
 
-y = 10
+y = "10"
 
 if type(y) != int:
     raise ValueError("Only Numbers Allowed")
