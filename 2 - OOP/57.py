@@ -3,7 +3,7 @@
 # ----------------------------------------------------------
 # [01] Class is The Blueprint Or Constructor Of The Object
 # [02] Class Instantiate Means Create Instance of A Class
-# [03] Instance => Object Created From Class And Have Their Methods and Attributes
+# [03] Instance => Object Created From Class And Have Their Methods and Attributes              
 # [04] Class Defined With Keyword class
 # [05] Class Name Written With PascalCase [UpperCamelCase] Style
 # [06] Class May Contains Methods and Attributes
