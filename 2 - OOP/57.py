@@ -23,22 +23,7 @@
 #     def __init__(self, other_data)
 #         Body Of Function
 
-
-class Member:
+class Member :
+    
     def __init__(self):
-
-        print("A New Member Has Been Added")
-
-
-member_one = Member()
-member_two = Member()
-member_three = Member()
-
-print(member_one.__class__)
-
-my_dictionary = {
-    "name": "Islam",
-    "age": 20,
-    "monthly_salary": 6000,
-    "yearly_salary": 72000 
-}
+        pass
