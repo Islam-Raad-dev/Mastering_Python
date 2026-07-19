@@ -9,3 +9,18 @@
 # Instance Methods Can Freely Access Attributes And Methods On The Same Object
 # Instance Methods Can Access The Class Itself
 # -----------------------------------------------------------
+
+class Member : 
+    def __init__(self, First_Name, Mid_Name,  Last_Name, Age):
+
+        self.FName = First_Name
+        self.MName = Mid_Name
+        self.LName = Last_Name
+        self.Age = Age
+
+
+Member_One   = Member("Islam", "Raad", "Fathi", 20)
+Member_Two   = Member("Ahmad", "Ali", "Salah", 19)
+Member_Three = Member("Karam", "Raad", "Abd", 22)
+
+print(Member_One.FName + " " + Member_One.MName+ " " + Member_One.LName + ", Age = ", Member_One.Age)
