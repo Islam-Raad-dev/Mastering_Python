@@ -21,6 +21,6 @@ class Member :
 
 Member_One   = Member("Islam", "Raad", "Fathi", 20)
 Member_Two   = Member("Ahmad", "Ali", "Salah", 19)
-Member_Three = Member("Karam", "Raad", "Abd", 22)
+Member_Three = Member("Omar", "Raad", "Abd", 22)
 
 print(Member_One.FName + " " + Member_One.MName+ " " + Member_One.LName + ", Age = ", Member_One.Age)
