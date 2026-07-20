@@ -18,7 +18,7 @@ print(len({"Key_One": 1, "Key_Two": 2}))
 
 
 class A:
-    def do_something(self):
+    def Function_1(self):
 
         print("From Class A")
 
@@ -26,16 +26,16 @@ class A:
 
 
 class B(A):
-    def do_something(self):
+    def Function_1(self):
 
         print("From Class B")
 
 
 class C(A):
-    def do_something(self):
+    def Function_1(self):
 
         print("From Class C")
 
 
 my_instance = B()
-my_instance.do_something()
+my_instance.Function_1()
