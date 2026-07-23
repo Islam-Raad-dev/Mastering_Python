@@ -80,14 +80,20 @@ def Add_Skill(cr):
     db.commit()
 
 def Delete_Skill(cr):
-        os.system("cls" if os.name == "nt" else "clear")
+    os.system("cls" if os.name == "nt" else "clear")
 
-    print("\n----------------Add Skill Screen----------------\n")
+    print("\n----------------Delete Skill Screen----------------\n")
+
+    deleted_skill = input("Enter Skill ID: ")
+
+    db.execute(f"delete from users where user_id = {deleted_skill}")
+
+    db.commit()
 
 def Update_Skill(cr):
         os.system("cls" if os.name == "nt" else "clear")
 
-    print("\n----------------Add Skill Screen----------------\n")
+        print("\n----------------Add Skill Screen----------------\n")
 
 def Quit(cr):
     db.close()
