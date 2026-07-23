@@ -1,6 +1,24 @@
 import sqlite3  # noqa: F401
 
+class SkillAppDataBase:
+    def __init__(self, db_name="SkillApp.db"):
+        self.db_name = db_name
+        self._init_db()
+
+    def _init_db(self):
+        with sqlite3.connect(self.db_name) as db:
+            db.execute("""
+                CREATE TABLE IF NOT EXISTS skills (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_name TEXT UNIQUE NOT NULL,
+                    user_skill TEXT ,
+                    progress INTEGER CHECK(progress BETWEEN 0 AND 100)
+                )
+            """)
+
 class SkillApp:
+    def __init__(self):
+        self.repo = SkillAppDataBase()
 
     Massage = """
 What Do You Want To Do:
@@ -32,17 +50,8 @@ def Read_User_Options():
 
             print("\n--- Invalid Input. Please enter a number ---")
 
-def connect_to_database():
-
-    try:
-        db = sqlite3.connect("SkillApp.db")
-        cr = db.cursor()  # noqa: F841
-
-    except sqlite3.Error as er:
-        print(f"Error While Connect To DataBase {er}")
-
 def Show_Skills():
-    print("Show Skill Will Be Here.")
+    pass
 
 def Add_Skill():
     print("Add Skill Will Be Here.")
