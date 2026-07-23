@@ -15,7 +15,18 @@ Choose Option: """
 
     commands_list = [1, 2, 3, 4, 5]
 
+def connect_to_database():
+
+    try:
+
+        db = sqlite3.connect("SkillApp.db")
+        cr = db.cursor()  # noqa: F841
+
+    except sqlite3.Error as er:
+            print(f"Error While Connect To DataBase {er}")
+
 def Read_User_Options():
+
     while True:
         try:
             user_input = int(input(SkillApp.Massage))
@@ -30,27 +41,20 @@ def Read_User_Options():
 
             print("\n--- Invalid Input. Please enter a number ---")
 
-
 def Show_Skills():
     print("Show Skill Will Be Here.")
-
 
 def Add_Skill():
     print("Add Skill Will Be Here.")
 
-
 def Delete_Skill():
     print("Delete Skill Will Be Here.")
-
 
 def Update_Skill():
     print("Update Skill Will Be Here.")
 
-
 def Quit():
     print("Quit Will Be Here.")
-
-#____________________________________________________________________________
 
 def Performed_User_Options(user_input):
 
