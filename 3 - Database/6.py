@@ -49,6 +49,21 @@ def Read_User_Options():
         except ValueError:
 
             print("\n--- Invalid Input. Please enter a number ---")
+def Performed_User_Options(user_input):
+
+    if user_input in SkillApp.commands_list:
+        match user_input:
+            case 1:
+                Show_Skills()
+            case 2:
+                Add_Skill()
+            case 3:
+                Delete_Skill()
+            case 4:
+                Update_Skill()
+            case 5:
+                Quit()
+
 
 def Show_Skills():
     pass
@@ -64,22 +79,6 @@ def Update_Skill():
 
 def Quit():
     print("Quit Will Be Here.")
-
-def Performed_User_Options(user_input):
-
-    if user_input in SkillApp.commands_list:
-
-        match user_input:
-            case 1:
-                Show_Skills()
-            case 2:
-                Add_Skill()
-            case 3:
-                Delete_Skill()
-            case 4:
-                Update_Skill()
-            case 5: 
-                Quit()
 
 
 
