@@ -1,24 +1,6 @@
 import sqlite3  # noqa: F401
 
-class SkillAppDataBase:
-    def __init__(self, db_name="SkillApp.db"):
-        self.db_name = db_name
-        self._init_db()
-
-    def _init_db(self):
-        with sqlite3.connect(self.db_name) as db:
-            db.execute("""
-                CREATE TABLE IF NOT EXISTS skills (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    user_name TEXT UNIQUE NOT NULL,
-                    user_skill TEXT ,
-                    progress INTEGER CHECK(progress BETWEEN 0 AND 100)
-                )
-            """)
-
 class SkillApp:
-    def __init__(self):
-        self.repo = SkillAppDataBase()
 
     Massage = """
 What Do You Want To Do:
@@ -49,6 +31,7 @@ def Read_User_Options():
         except ValueError:
 
             print("\n--- Invalid Input. Please enter a number ---")
+
 def Performed_User_Options(user_input):
 
     if user_input in SkillApp.commands_list:
@@ -64,6 +47,22 @@ def Performed_User_Options(user_input):
             case 5:
                 Quit()
 
+def connect_to_database():
+    try:
+
+        db = sqlite3.connect("SkillApp.db")
+        cr = db.cursor() # noqa: F841
+
+        cr.execute("""
+                CREATE TABLE IF NOT EXISTS skills (
+                    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT UNIQUE NOT NULL,
+                    progress INTEGER CHECK(progress BETWEEN 0 AND 100)
+                )
+            """)
+
+    except sqlite3.Error as er:
+        print(f"Error While Connect To DataBase {er}")
 
 def Show_Skills():
     pass
@@ -79,7 +78,6 @@ def Update_Skill():
 
 def Quit():
     print("Quit Will Be Here.")
-
 
 
 option = Read_User_Options()
