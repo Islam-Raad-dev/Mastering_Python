@@ -1,5 +1,7 @@
 import sqlite3  # noqa: F401
 import os
+
+
 class SkillApp:
 
     Message = """
@@ -107,7 +109,7 @@ def Update_Skill(db ,cr):
 
         skill_id = input("Enter The Skill ID: ")
 
-        cr.execute("select * from skills")
+        cr.execute("select user_id from skills")
         
         results = cr.fetchall()  # noqa: F841
 
@@ -121,7 +123,7 @@ def Update_Skill(db ,cr):
 
         db.commit()
 
-def Quit(cr):
+def Quit(db, cr):
     db.close()
     print("App Closed.")
     exit()
@@ -135,7 +137,7 @@ def main():
         option = read_user_options()
         match option:
             case 1:
-                Show_Skills(cr)
+                Show_Skills(db ,cr)
             case 2:
                 Add_Skill(db, cr)
             case 3:
