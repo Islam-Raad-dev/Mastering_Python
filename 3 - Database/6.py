@@ -65,7 +65,10 @@ def connect_to_database():
         print(f"Error While Connect To DataBase {er}")
 
 def Show_Skills(cr):
-    pass
+    results = cr.execute("select * from skills")
+
+    for id, name, prog in results:
+        print(f"User ID {id} => Skill Name {name}, And The Progress is {prog}")
 
 def Add_Skill(cr):
     print("Add Skill Will Be Here.")
