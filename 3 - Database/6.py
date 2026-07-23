@@ -32,7 +32,6 @@ def Read_User_Options():
 
             print("\n--- Invalid Input. Please enter a number ---")
 
-
 def connect_to_database():
     try:
 
@@ -81,10 +80,14 @@ def Add_Skill(cr):
     db.commit()
 
 def Delete_Skill(cr):
-    print("Delete Skill Will Be Here.")
+        os.system("cls" if os.name == "nt" else "clear")
+
+    print("\n----------------Add Skill Screen----------------\n")
 
 def Update_Skill(cr):
-    print("Update Skill Will Be Here.")
+        os.system("cls" if os.name == "nt" else "clear")
+
+    print("\n----------------Add Skill Screen----------------\n")
 
 def Quit(cr):
     db.close()
