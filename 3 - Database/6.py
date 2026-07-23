@@ -16,7 +16,7 @@ Choose Option: """
     commands_list = [1, 2, 3, 4, 5]
 
 
-def Read_User_Options():
+def read_user_options():
 
     while True:
         try:
@@ -51,7 +51,7 @@ def connect_to_database():
             print(f"Error While Connecting To DataBase: {er}")
             return None, None
 
-def Show_Skills(cr):
+def Show_Skills(db, cr):
 
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -70,35 +70,50 @@ def Show_Skills(cr):
 
     db.commit()
 
-def Add_Skill(cr):
+def Add_Skill(db, cr):
 
     os.system("cls" if os.name == "nt" else "clear")
 
     print("\n----------------Add Skill Screen----------------\n")
 
     SkillName = input("Enter Skill Name: ")
-    Progress = input("Enter Skill Progress: ")
+    Progress = int(input("Enter Skill Progress: "))
 
     db.execute(f"INSERT INTO skills (name, progress) VALUES ('{SkillName}', '{Progress}')")
     db.commit()
 
-def Delete_Skill(cr):
+def Delete_Skill(db, cr):
     os.system("cls" if os.name == "nt" else "clear")
 
     print("\n----------------Delete Skill Screen----------------\n")
+    while True:
 
-    deleted_skill = input("Enter Skill ID: ")
+        deleted_skill = input("Enter Skill ID: ")
 
-    db.execute(f"delete from skills where user_id = {deleted_skill}")
+        cr.execute("select user_id from skills")
+        results = cr.fetchall()
+    
+        if not results:
+            print("Wrong ID Please Enter Another One:")
 
-    db.commit()
+        db.execute(f"delete from skills where user_id = {deleted_skill}")
 
-def Update_Skill(cr):
+        db.commit()
+
+def Update_Skill(db ,cr):
         os.system("cls" if os.name == "nt" else "clear")
 
         print("\n----------------Update Skill Screen----------------\n")
 
         skill_id = input("Enter The Skill ID: ")
+
+        cr.execute("select * from skills")
+        
+        results = cr.fetchall()  # noqa: F841
+
+        if not results:
+            print("Wrong ID Please Enter Valid ID:")
+
         updated_skill = input("Enter The New Skill: ")
         updated_progress = input("Enter The New Progress: ")
 
@@ -108,24 +123,29 @@ def Update_Skill(cr):
 
 def Quit(cr):
     db.close()
+    print("App Closed.")
     exit()
 
-def Performed_User_Options(user_input, db, cr):
+def main():
+    db, cr = connect_to_database()
+    if not db:
+        return
 
-    if user_input in SkillApp.commands_list:
-        match user_input:
+    while True:
+        option = read_user_options()
+        match option:
             case 1:
                 Show_Skills(cr)
             case 2:
-                Add_Skill(cr)
+                Add_Skill(db, cr)
             case 3:
-                Delete_Skill(cr)
+                Delete_Skill(db, cr)
             case 4:
-                Update_Skill(cr)
+                Update_Skill(db, cr)
             case 5:
-                Quit(cr)
+                db.close()
+                print("App Closed.")
+                break
 
-db, cr = connect_to_database()
-if db:
-    option = Read_User_Options()
-    Performed_User_Options(option, db, cr)
+if __name__ == "__main__":
+    main()
