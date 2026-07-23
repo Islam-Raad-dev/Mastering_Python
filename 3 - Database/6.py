@@ -61,6 +61,9 @@ def Show_Skills(cr):
 
     results = cr.fetchall()
 
+    if not results:
+        print("No Skills Found")
+
     for id, name, prog in results:
 
         print(f"User ID [{id}], Skill Name [{name}], Progress is [{prog}]")
@@ -86,14 +89,22 @@ def Delete_Skill(cr):
 
     deleted_skill = input("Enter Skill ID: ")
 
-    db.execute(f"delete from users where user_id = {deleted_skill}")
+    db.execute(f"delete from skills where user_id = {deleted_skill}")
 
     db.commit()
 
 def Update_Skill(cr):
         os.system("cls" if os.name == "nt" else "clear")
 
-        print("\n----------------Add Skill Screen----------------\n")
+        print("\n----------------Update Skill Screen----------------\n")
+
+        skill_id = input("Enter The Skill ID: ")
+        updated_skill = input("Enter The New Skill: ")
+        updated_progress = input("Enter The New Progress: ")
+
+        db.execute(f"update skills set name = '{updated_skill}' , progress = '{updated_progress}' where user_id = {skill_id}")
+
+        db.commit()
 
 def Quit(cr):
     db.close()
