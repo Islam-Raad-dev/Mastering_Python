@@ -37,15 +37,15 @@ def Performed_User_Options(user_input):
     if user_input in SkillApp.commands_list:
         match user_input:
             case 1:
-                Show_Skills()
+                Show_Skills(cr)
             case 2:
-                Add_Skill()
+                Add_Skill(cr)
             case 3:
-                Delete_Skill()
+                Delete_Skill(cr)
             case 4:
-                Update_Skill()
+                Update_Skill(cr)
             case 5:
-                Quit()
+                Quit(cr)
 
 def connect_to_database():
     try:
@@ -64,21 +64,21 @@ def connect_to_database():
     except sqlite3.Error as er:
         print(f"Error While Connect To DataBase {er}")
 
-def Show_Skills():
+def Show_Skills(cr):
     pass
 
-def Add_Skill():
+def Add_Skill(cr):
     print("Add Skill Will Be Here.")
 
-def Delete_Skill():
+def Delete_Skill(cr):
     print("Delete Skill Will Be Here.")
 
-def Update_Skill():
+def Update_Skill(cr):
     print("Update Skill Will Be Here.")
 
-def Quit():
+def Quit(cr):
     print("Quit Will Be Here.")
 
-
+cr = connect_to_database()
 option = Read_User_Options()
 Performed_User_Options(option)
