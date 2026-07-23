@@ -1,8 +1,8 @@
 import sqlite3  # noqa: F401
-
+import os
 class SkillApp:
 
-    Massage = """
+    Message = """
 What Do You Want To Do:
 
 1 => Show All Skills
@@ -20,7 +20,7 @@ def Read_User_Options():
 
     while True:
         try:
-            user_input = int(input(SkillApp.Massage))
+            user_input = int(input(SkillApp.Message))
 
             if user_input in SkillApp.commands_list:
 
@@ -32,20 +32,6 @@ def Read_User_Options():
 
             print("\n--- Invalid Input. Please enter a number ---")
 
-def Performed_User_Options(user_input):
-
-    if user_input in SkillApp.commands_list:
-        match user_input:
-            case 1:
-                Show_Skills(cr)
-            case 2:
-                Add_Skill(cr)
-            case 3:
-                Delete_Skill(cr)
-            case 4:
-                Update_Skill(cr)
-            case 5:
-                Quit(cr)
 
 def connect_to_database():
     try:
@@ -60,18 +46,39 @@ def connect_to_database():
                     progress INTEGER CHECK(progress BETWEEN 0 AND 100)
                 )
             """)
-
+        db.commit()
+        return db, cr
     except sqlite3.Error as er:
-        print(f"Error While Connect To DataBase {er}")
+            print(f"Error While Connecting To DataBase: {er}")
+            return None, None
 
 def Show_Skills(cr):
-    results = cr.execute("select * from skills")
+
+    os.system("cls" if os.name == "nt" else "clear")
+
+    print("\n---------------Show Skills Screen---------------\n")
+
+    cr.execute("select * from skills")
+
+    results = cr.fetchall()
 
     for id, name, prog in results:
-        print(f"User ID {id} => Skill Name {name}, And The Progress is {prog}")
+
+        print(f"User ID [{id}], Skill Name [{name}], Progress is [{prog}]")
+
+    db.commit()
 
 def Add_Skill(cr):
-    print("Add Skill Will Be Here.")
+
+    os.system("cls" if os.name == "nt" else "clear")
+
+    print("\n----------------Add Skill Screen----------------\n")
+
+    SkillName = input("Enter Skill Name: ")
+    Progress = input("Enter Skill Progress: ")
+
+    db.execute(f"INSERT INTO skills (name, progress) VALUES ('{SkillName}', '{Progress}')")
+    db.commit()
 
 def Delete_Skill(cr):
     print("Delete Skill Will Be Here.")
@@ -80,8 +87,25 @@ def Update_Skill(cr):
     print("Update Skill Will Be Here.")
 
 def Quit(cr):
-    print("Quit Will Be Here.")
+    db.close()
+    exit()
 
-cr = connect_to_database()
-option = Read_User_Options()
-Performed_User_Options(option)
+def Performed_User_Options(user_input, db, cr):
+
+    if user_input in SkillApp.commands_list:
+        match user_input:
+            case 1:
+                Show_Skills(cr)
+            case 2:
+                Add_Skill(cr)
+            case 3:
+                Delete_Skill(cr)
+            case 4:
+                Update_Skill(cr)
+            case 5:
+                Quit(cr)
+
+db, cr = connect_to_database()
+if db:
+    option = Read_User_Options()
+    Performed_User_Options(option, db, cr)
