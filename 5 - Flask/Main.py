@@ -36,7 +36,7 @@ def skills():
         page_head="My Skills",
         description="This Is My Skills Page",
         skills=my_skills,
-    )
+        custom_css="skills")
 
 if __name__ == "__main__":
     skills_app.run(debug=True, port=9000)
