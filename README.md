@@ -25,9 +25,8 @@ The execution follows strict architectural discipline:
 * **02_OOP:** Classes, inheritance, magic methods, and abstraction.
 * **03_Database:** DDL and DML execution through Python scripts.
 * **04_Mics:** 
-* **05_Flask:** 
-* **06_Fastapi:** 
-* **07_Numpy:** Array creation and mathematical operations.
+* **05_Flask:**  
+* **06_Numpy:** Array creation and mathematical operations.
 
 ## 🛠️ Technologies Used
 * **Language:** Python 3
