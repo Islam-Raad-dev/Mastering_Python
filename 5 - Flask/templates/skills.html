@@ -4,8 +4,11 @@
 <p class="page-description">{{ description }}</p>
 
 {% for skill in skills %}
-<div>
-  {{ skill[0] }} | {{ skill[1] }}
+<div class="skill-box">
+  <div class="skill-name">{{ skill[0] }}</div>
+  <div class="skill-progress">
+    <span style="width: {{ skill[1] }}%"></span>
+  </div>
 </div>
 {% endfor %}
 
