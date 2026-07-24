@@ -15,12 +15,12 @@ skills_app = Flask(__name__)
 
 @skills_app.route("/")
 def homepage():
-    return render_template("index.html")
+    return render_template("HomePage.html")
 
 
 @skills_app.route("/about")
 def about():
-    return "About Page From Flask Framework"
+    return render_template("about.html")
 
 
 if __name__ == "__main__":
