@@ -6,7 +6,7 @@
 # - Subtitle Download And Add On Your Movies [ Many Modules ]
 # - Get Quotes From Websites
 # - Get Gold and Currencies Rate
-# - Get News From Websites
+# - Get News From Websites                            
 # - --------------------------------------------
 
 from selenium import webdriver
