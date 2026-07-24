@@ -8,14 +8,14 @@
 # - JavaScript
 # --------------------------------------------
 
-from flask import Flask
+from flask import Flask, render_template
 
 skills_app = Flask(__name__)
 
 
 @skills_app.route("/")
 def homepage():
-    return "Hello From Flask Framework"
+    return render_template("index.html")
 
 
 @skills_app.route("/about")
