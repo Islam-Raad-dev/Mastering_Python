@@ -6,7 +6,7 @@
 # - By Adding @absttractmethod Decorator on The Methods
 # - ABCMeta Class Is a Metaclass Used For Defining Abstract Base Class
 # --------------------------------------------------------------------
-
+            
 from abc import ABCMeta, abstractmethod
 
 
