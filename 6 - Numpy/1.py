@@ -22,8 +22,6 @@
 # - You Can Be Sure Whats The Storage Size Needed for The Array
 # - NumPy Arrays Are Indexed From 0
 # --------------------------------------------------------------
-# - NumPy On Github => https://github.com/numpy/numpy
-# ---------------------------------------------------
 
 import numpy as np
 
