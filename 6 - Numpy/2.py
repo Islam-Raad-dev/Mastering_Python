@@ -40,10 +40,16 @@ print("#" * 50)
 
 # Number Of Dimensions
 
-
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
 
 print("#" * 50)
 
 # Custom Dimensions
 
+my_custom_array = np.array([1, 2, 3], ndmin = 3)
 
+print(my_custom_array.ndim)
+print(my_custom_array[0, 0, 0])
