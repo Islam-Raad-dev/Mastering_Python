@@ -10,7 +10,6 @@ my_array1 = np.array([1, 2, 3, 4])
 print(my_array1.ndim)
 print(my_array1.shape)
 
-print("#" * 50)
 
 my_array2 = np.array([[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]])
 print(my_array2.ndim)
