@@ -39,8 +39,6 @@ print(my_array5.shape)
 
 print("#" * 50)
 
-# reshaped_array5 = my_array5.reshape(-1)
-# reshaped_array5 = my_array5.reshape(4, 5)
 reshaped_array5 = my_array5.reshape(2, 5, 2)
 print(reshaped_array5.ndim)
 print(reshaped_array5.shape)
