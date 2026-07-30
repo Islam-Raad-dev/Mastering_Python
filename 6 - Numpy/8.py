@@ -18,7 +18,7 @@ print(my_array2.shape)
 
 my_array3 = np.array([[[1, 2, 3], [1, 2, 3]], [[1, 2, 3], [1, 2, 3]]])
 print(my_array3.ndim)
-print(my_array3.shape)
+print(my_array3.shape())
 
 print("#" * 50)
 
